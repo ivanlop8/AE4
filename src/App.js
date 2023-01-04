@@ -18,25 +18,27 @@ import {
 } from 'react-native';
 
 const App = () => {
-  
+  return (
+    <View style={styles.container}>
+      
+    </View>
+  ); 
 };
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
+  blocDeDades: {
+    flex: 1,
+    padding: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
+  blocImatges: {
+    flex: 3,
   },
 });
 
