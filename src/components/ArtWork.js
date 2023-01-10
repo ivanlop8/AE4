@@ -8,7 +8,9 @@ function Square(props) {
         height={props.height} 
         backgroundColor={props.color} 
         Text={props.Text} 
-       />   
+      > 
+      <Text style={styles.text}> Açi va una foto </Text> 
+      </View>  
     );
 }  
 
@@ -30,4 +32,8 @@ const styles = StyleSheet.create({
     alignItems: 'center', 
     justifyContent: 'center', 
   },
+  text: { 
+    textAlign: 'center',
+    marginTop: 180, 
+  }
 });
