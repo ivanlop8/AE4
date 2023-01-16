@@ -20,6 +20,7 @@ import {
 
 import { ArtWork } from './components/ArtWork';
 import { TitolCantant } from './components/TitolCantant'; 
+import { Controls } from './components/ZonaControls'; 
 
 const App = () => {
   return (
@@ -30,8 +31,8 @@ const App = () => {
       <View style={styles.TitolCantant}>
         <TitolCantant titol='Tu Calorro' cantant='       Estopa'/>  
       </View>
-      <View style={styles.style2}>
-
+      <View style={styles.Controls}>
+        <Controls />
       </View>
     </View>
   ); 
@@ -50,9 +51,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#191414'
   },
-  style2: {
+  Controls: {
     flex: 2,
-    backgroundColor: '#fff'
+    backgroundColor: '#191414'
   },
 });
 
