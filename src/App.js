@@ -15,18 +15,20 @@ import {
   Text,
   useColorScheme,
   View,
+  Image, 
 } from 'react-native';
 
 import { ArtWork } from './components/ArtWork';
+import { TitolCantant } from './components/TitolCantant'; 
 
 const App = () => {
   return (
     <View style={styles.container}>
       <View style={styles.ArtWork}> 
-        <ArtWork /> 
+        <ArtWork image = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-g04tFYeRacXdRDB-G09RsqHyjCDQg4QpZ2bNa7axBg&s'/>    
       </View> 
-      <View style={styles.style1}>
-
+      <View style={styles.TitolCantant}>
+        <TitolCantant titol='Tu Calorro' cantant='       Estopa'/>  
       </View>
       <View style={styles.style2}>
 
@@ -44,9 +46,9 @@ const styles = StyleSheet.create({
     flex: 3,
     backgroundColor: '#191414'
   },
-  style1: {
+  TitolCantant: {
     flex: 1,
-    backgroundColor: '#fff'
+    backgroundColor: '#191414'
   },
   style2: {
     flex: 2,

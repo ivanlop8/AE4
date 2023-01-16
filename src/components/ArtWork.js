@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, Text} from 'react-native'; 
+import {View, StyleSheet, Text, Image} from 'react-native';  
 
 function Square(props) {
     return (
@@ -14,14 +14,14 @@ function Square(props) {
     );
 }  
 
-export const ArtWork = () => {
+export const ArtWork = (props) => {
   return (
-    <View style={styles.Container}>
-      <Square
+    <View style={styles.Container}> 
+      {props.image===''?<Square
         width = {200} 
         height = {200}
         color = '#1DB954'
-      /> 
+      />:<Image style={{width:200, height:200}}source={{uri: props.image}}/>}
     </View>
   );
 };
