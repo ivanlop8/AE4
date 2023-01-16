@@ -64,7 +64,7 @@ export const Controls = (props) => {
         maximumTrackTintColor= {theme.colors.inverseSurface} 
         value={this.state.value}
         onValueChange={value => this.setState({value})}
-        size={40}
+        size={40} 
         />
         </View>
         <View style={styles.controls}>
